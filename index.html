@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePunjab - Watch Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header>
+    <h2 class="logo">▶ CinePunjab</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="punjabi.html">Punjabi Movies</a>
+        <a href="hindi.html">Hindi Movies</a>
+    </nav>
+
+    <input type="search" id="searchInput"
+           placeholder="Search movies...">
+</header>
+
+<section class="hero">
+    <p>YOUR MOVIE COLLECTION</p>
+    <h1>Movies Worth<br><span>Watching.</span></h1>
+    <p>Punjabi and Hindi movies, all in one place.</p>
+    <a href="#movies" class="btn">Explore Movies</a>
+</section>
+
+<section class="section">
+    <h2>Browse Categories</h2>
+
+    <div class="categories">
+        <a href="punjabi.html" class="category punjabi">
+            <h3>ਪੰਜਾਬੀ Movies</h3>
+            <p>Explore Punjabi cinema →</p>
+        </a>
+
+        <a href="hindi.html" class="category hindi">
+            <h3>Hindi Movies</h3>
+            <p>Explore Hindi cinema →</p>
+        </a>
+    </div>
+</section>
+
+<section class="section" id="movies">
+    <h2>Featured Movies</h2>
+    <div class="movie-grid" id="movieGrid"></div>
+    <p id="emptyState" hidden>No movies found.</p>
+</section>
+
+<footer>
+    <h3>CinePunjab</h3>
+    <p>Movies for everyone.</p>
+</footer>
+
+<div id="playerModal" class="modal" hidden>
+    <div class="player-box">
+        <button id="closePlayer" class="close">✕</button>
+        
+<video id="moviePlayer" width="100%" controls>
+  Your browser does not support video playback.
+</video>
+
+        <h2 id="playerTitle"></h2>
+        <p id="playerDescription"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

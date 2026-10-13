@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjabi Movies - CinePunjab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="punjabi">
+
+<header>
+    <h2 class="logo">▶ CinePunjab</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="punjabi.html">Punjabi Movies</a>
+        <a href="hindi.html">Hindi Movies</a>
+    </nav>
+    <input type="search" id="searchInput" placeholder="Search movies...">
+</header>
+
+<section class="page-heading">
+    <h1>Punjabi <span>Movies</span></h1>
+    <p>Discover Punjabi cinema and stories.</p>
+</section>
+
+<section class="section">
+    <h2>All Punjabi Movies</h2>
+    <div class="movie-grid" id="movieGrid"></div>
+    <p id="emptyState" hidden>No movies found.</p>
+</section>
+
+<footer><h3>CinePunjab</h3></footer>
+
+<div id="playerModal" class="modal" hidden>
+    <div class="player-box">
+        <button id="closePlayer" class="close">✕</button>
+        <video id="moviePlayer" controls playsinline></video>
+        <h2 id="playerTitle"></h2>
+        <p id="playerDescription"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
